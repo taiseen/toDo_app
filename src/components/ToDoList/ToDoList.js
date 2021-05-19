@@ -58,7 +58,7 @@ function ToDoList() {
                         <SingleTask
                             taskList={task}
                             onDelete={onDelete}
-                            key={task.sNo} />)
+                            key={task.id} />)
                 }
             </div>
         </div>
