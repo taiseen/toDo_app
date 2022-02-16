@@ -45,14 +45,17 @@ function ToDoList() {
     }
 
     return (
-        <div>
+        <div className="container min-vh-100">
             <AddTask addTask={handleAddNewTask} />
 
-            <div className="container my-3">
-                <h2>Task List</h2>
+
+            <h2 className="text-center">Task List</h2>
+            <div className="container d-flex flex-wrap justify-content-center ">
+
                 {
-                    taskList.length === 0 && <h3>You have no tasks</h3>
+                    taskList.length === 0 && <h3 className="text-danger">You have no task yet...</h3>
                 }
+
                 {
                     taskList?.map(task =>
                         <SingleTask
@@ -60,6 +63,7 @@ function ToDoList() {
                             onDelete={onDelete}
                             key={task.id} />)
                 }
+
             </div>
         </div>
     );

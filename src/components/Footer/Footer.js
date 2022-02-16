@@ -10,14 +10,14 @@ function Footer() {
         backgroundColor: '#555',
         color: '#fff',
         textAlign: 'center',
-
-        position: 'relative',
-        bottom: '0',
-        left: '0',
+        // position: 'fixed',
+        // bottom: '0',
+        // left: '0',
+        // right: '0',
     }
 
     return (
-        <div style={footerStyle} >
+        <div style={footerStyle} className="">
             <h4>Copyright &copy; by Learning | 2021  </h4>
         </div>
     );

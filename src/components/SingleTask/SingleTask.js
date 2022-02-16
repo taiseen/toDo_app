@@ -5,7 +5,7 @@ function SingleTask({ taskList, onDelete }) {
     const { id, title, description } = taskList;
 
     return (
-        <div className="container my-3">
+        <div className="mx-4 my-2">
             <h1>{title}</h1>
             <h3>{description}</h3>
             <button

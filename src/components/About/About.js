@@ -2,7 +2,7 @@ import React from 'react';
 
 function About() {
     return (
-        <div className="container my-3">
+        <div className="container my-3 min-vh-100">
             <h2>ToDo List | React App</h2>
             <p>This project build at 15-May-2021</p>
 
